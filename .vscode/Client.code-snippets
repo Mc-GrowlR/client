@@ -1,0 +1,1940 @@
+{
+
+	"创建窗口控件": {
+		"prefix": "GUI:Win_Create",
+		"body": [
+		"GUI:Win_Create ( _ID, _PosX, _PosY, _Width, _Height, _Main, _Last, _NeedVoice, _EscClose)",
+		],
+			"description": "创建窗口控件"
+	},
+
+	"创建容器控件": {
+		"prefix": "GUI:Layout_Create",
+		"body": [
+		"GUI:Layout_Create( _Parent, _ID, _PosX, _PosY, _Width, _Height, _isClip)",
+		],
+			"description": "创建容器控件"
+	},
+
+	"创建图片控件": {
+		"prefix": "GUI:Image_Create",
+		"body": [
+		"GUI:Image_Create( _Parent, _ID, _PosX, _PosY, _nimg)",
+		],
+			"description": "创建图片控件"
+	},
+
+	"创建按钮控件": {
+		"prefix": "GUI:Button_Create",
+		"body": [
+		"GUI:Button_Create( _Parent, _ID, _PosX, _PosY, _nimg)",
+		],
+			"description": "创建按钮控件"
+	},
+
+	"创建文本控件": {
+		"prefix": "GUI:Text_Create",
+		"body": [
+		"GUI:Text_Create(parent, ID, x, y, fontSize, fontColor, str)",
+		],
+			"description": "创建文本控件"
+	},
+
+	"创建艺术字控件": {
+		"prefix": "GUI:TextAtlas_Create",
+		"body": [
+		"GUI:TextAtlas_Create(parent, ID, x, y, stringValue, charMapFile, Width, Height, startCharMap)",
+		],
+			"description": "创建艺术字控件"
+	},
+
+	"创建富文本控件": {
+		"prefix": "GUI:RichText_Create",
+		"body": [
+		"GUI:RichText_Create(parent, ID, x, y, str, width, Size, Color, vspace, hyperlinkCB)",
+		],
+			"description": "创建富文本控件"
+	},
+
+	"创建物品框控件": {
+		"prefix": "GUI:ItemSthow_Create",
+		"body": [
+		"GUI:ItemShow_Create(parent, ID, x, y, itemData)",
+		],
+			"description": "创建物品框控件"
+	},
+
+	"创建特效控件": {
+		"prefix": "GUI:Effect_Create",
+		"body": [
+		"GUI:Effect_Create(parent, ID, x, y, effecttype, effectid, sex, act, dir, speed)",
+		],
+			"description": "创建特效控件"
+	},
+
+	"创建进度条控件": {
+		"prefix": "GUI:LoadingBar_Create",
+		"body": [
+		"GUI:LoadingBar_Create(parent, ID, x, y, nimg, direction)",
+		],
+			"description": "创建进度条控件"
+	},
+
+	"创建输入框控件": {
+		"prefix": "GUI:TextInput_Create",
+		"body": [
+		"GUI:TextInput_Create(parent, ID, x, y, width, height, fontSize)",
+		],
+			"description": "创建输入框控件"
+	},
+
+	"创建列表容器": {
+		"prefix": "GUI:ListView_Create",
+		"body": [
+		"GUI:ListView_Create(parent, ID, x, y, width, height, direction)",
+		],
+			"description": "创建列表容器"
+	},
+
+	"创建复选框控件": {
+		"prefix": "GUI:CheckBox_Create",
+		"body": [
+		"GUI:CheckBox_Create(parent, ID, x, y, nimg, pimg)",
+		],
+			"description": "创建复选框控件"
+	},
+
+	"创建圆形进度条控件": {
+		"prefix": "GUI:ProgressTimer_Create",
+		"body": [
+		"GUI:ProgressTimer_Create(parent, ID, x, y, img)",
+		],
+			"description": "创建圆形进度条控件"
+	},
+
+	"创建滚动容器": {
+		"prefix": "GUI:ScrollView_Create",
+		"body": [
+		"GUI:ScrollView_Create(parent, ID, x, y, width, height, direction)",
+		],
+			"description": "创建滚动容器"
+	},
+
+	"创建节点控件": {
+		"prefix": "GUI:Node_Create",
+		"body": [
+		"GUI:Node_Create(parent, ID, x, y)",
+		],
+			"description": "创建节点控件"						// 不推荐使用 已经适配
+	},
+
+	"创建动画控件": {
+		"prefix": "GUI:Frames_Create",
+		"body": [
+		"GUI:Frames_Create(parent, ID, x, y, prefix, suffix, beginframe, finishframe, ext)",
+		],
+			"description": "创建动画控件"
+	},
+
+	"创建快速刷新控件": {
+		"prefix": "GUI:QuickCell_Create",
+		"body": [
+		"GUI:QuickCell_Create(parent, ID, x, y, w, h, createCB)",
+		],
+			"description": "创建快速刷新控件"
+	},
+
+	"获取背包数据": {
+		"prefix": "SL:GetBagData",
+		"body": [
+		"SL:GetBagData()",
+		],
+			"description": "获取背包数据"
+	},
+
+	"获取指定页签下背包的数据": {
+		"prefix": "SL:GetBagDataByPage",
+		"body": [
+		"SL:GetBagDataByPage(page)",
+		],
+			"description": "获取指定页签下背包的数据"
+	},
+
+	"获取控件对象": {
+		"prefix": "GUI:GetWindow",
+		"body": [
+		"GUI:GetWindow(parent, ID)",
+		],
+			"description": "获取控件对象"
+	},
+
+	"获取控件位置": {
+		"prefix": "GUI:getPosition",
+		"body": [
+		"GUI:getPosition(widget)",
+		],
+			"description": "获取控件位置"
+	},
+
+	"获取控件锚点": {
+		"prefix": "GUI:getPosition",
+		"body": [
+		"GUI:getAnchorPoint(widget)",
+		],
+			"description": "获取控件锚点"
+	},
+
+	"获取控件大小": {
+		"prefix": "GUI:getContentSize",
+		"body": [
+		"GUI:getContentSize(widget)",
+		],
+			"description": "获取控件大小"
+	},
+
+	"获取控件旋转": {
+		"prefix": "GUI:getRotation",
+		"body": [
+		"GUI:getRotation(widget)",
+		],
+			"description": "获取控件旋转"
+	},
+
+	"获取控件是否显示": {
+		"prefix": "GUI:getVisible",
+		"body": [
+		"GUI:getVisible(widget)",
+		],
+			"description": "获取控件是否显示"
+	},
+
+	"获取控件透明度": {
+		"prefix": "GUI:getOpacity",
+		"body": [
+		"GUI:getOpacity(widget)",
+		],
+			"description": "获取控件透明度"
+	},
+
+	"获取控件缩放": {
+		"prefix": "GUI:getScale",
+		"body": [
+		"GUI:getScale(widget)",
+		],
+			"description": "获取控件缩放"
+	},
+
+	"获取控件是否以X轴翻转": {
+		"prefix": "GUI:getFlippedx",
+		"body": [
+		"GUI:getFlippedX(widget)",
+		],
+			"description": "获取控件是否以X轴翻转"
+	},
+
+	"获取控件是否以Y轴翻转": {
+		"prefix": "GUI:getFlippedY",
+		"body": [
+		"GUI:getFlippedY(widget)",
+		],
+			"description": "获取控件是否以Y轴翻转"
+	},
+
+	"获取控件是否可以点击": {
+		"prefix": "GUI:getTouchEnabled",
+		"body": [
+		"GUI:getTouchEnabled(widget)",
+		],
+			"description": "获取控件是否可以点击"
+	},
+
+	"获取父控件对象": {
+		"prefix": "GUI:getParent",
+		"body": [
+		"GUI:getParent(widget)",
+		],
+			"description": "获取父控件对象"
+	},
+
+	"获取该控件的所有子控件对象": {
+		"prefix": "GUI:getChildren",
+		"body": [
+		"GUI:getChildren(widget)",
+		],
+			"description": "获取该控件的所有子控件对象"
+	},
+
+	"获取文本控件的文本": {
+		"prefix": "GUI:Text_getString",
+		"body": [
+		"GUI:Text_getString(widget)",
+		],
+			"description": "获取文本控件的文本"
+	},
+
+	"获取进度条控件的进度值": {
+		"prefix": "GUI:LoadingBar_getPercent",
+		"body": [
+		"GUI:LoadingBar_getPercent(widget)",
+		],
+			"description": "获取进度条控件的进度值"
+	},
+
+	"获取输入框控件文本": {
+		"prefix": "GUI:TextInput_getString",
+		"body": [
+		"GUI:TextInput_getString(widget)",
+		],
+			"description": "获取输入框控件文本"
+	},
+
+	"获取艺术字控件内容": {
+		"prefix": "GUI:TextAtlas_getString",
+		"body": [
+		"GUI:TextAtlas_getString(widget)",
+		],
+			"description": "获取艺术字控件内容"
+	},
+
+	"获取列表容器指定子控件位置": {
+		"prefix": "GUI:ListView_getItemIndex",
+		"body": [
+		"GUI:ListView_getItemIndex(widget)",
+		],
+			"description": "获取列表容器指定子控件位置"
+	},
+
+	"获取复选框是否选中": {
+		"prefix": "GUI:CheckBox_isSelected",
+		"body": [
+		"GUI:CheckBox_isSelected(widget)",
+		],
+			"description": "获取复选框是否选中"
+	},
+
+	"获取圆形进度条控件的进度值": {
+		"prefix": "GUI:ProgressTimer_getPercentage",
+		"body": [
+		"GUI:ProgressTimer_getPercentage(widget)",
+		],
+			"description": "获取圆形进度条控件的进度值"
+	},
+
+	"获取左上角节点": {
+		"prefix": "GUI:Attach_LeftTop",
+		"body": [
+		"GUI:Attach_LeftTop()",
+		],
+			"description": "获取左上角节点"
+	},
+
+	"获取右上角节点": {
+		"prefix": "GUI:Attach_RightTop",
+		"body": [
+		"GUI:Attach_RightTop()",
+		],
+			"description": "获取右上角节点"
+	},
+
+	"获取左下角节点": {
+		"prefix": "GUI:Attach_LeftBottom",
+		"body": [
+		"GUI:Attach_LeftBottom()",
+		],
+			"description": "获取左下角节点"
+	},
+
+	"获取右下角节点": {
+		"prefix": "GUI:Attach_RightBottom",
+		"body": [
+		"GUI:Attach_RightBottom()",
+		],
+			"description": "获取右下角节点"
+	},
+
+	"获取桌面节点": {
+		"prefix": "GUI:Attach_Parent",
+		"body": [
+		"GUI:Attach_Parent()",
+		],
+			"description": "获取桌面节点"						// 不推荐使用 Win_Create 用代替
+	},
+
+	"获取控件自定义参数": {
+		"prefix": "GUI:Win_GetParam",
+		"body": [
+		"GUI:Win_GetParam(widget)",
+		],
+			"description": "获取控件自定义参数"
+	},
+
+	"获取控件id": {
+		"prefix": "GUI:getName",
+		"body": [
+		"GUI:getName(widget)",
+		],
+			"description": "获取控件id"
+	},
+
+	"获取列表容器控件间距": {
+		"prefix": "GUI:ListView_getItemsMargin",
+		"body": [
+		"GUI:ListView_getItemsMargin(widget)",
+		],
+			"description": "获取列表容器控件间距"
+	},
+
+	"获取列表容器内部滚动区域容器对象": {
+		"prefix": "GUI:ListView_getInnerContainer",
+		"body": [
+		"GUI:ListView_getInnerContainer(widget)",
+		],
+			"description": "获取列表容器内部滚动区域容器对象"
+	},
+
+
+
+	"设置控件旋转": {
+		"prefix": "GUI:setRotation",
+		"body": [
+		"GUI:setRotation(widget, value)",
+		],
+			"description": "设置控件旋转"
+	},
+
+	"设置控件大小": {
+		"prefix": "GUI:setContentSize",
+		"body": [
+		"GUI:setContentSize(widget, size)",
+		],
+			"description": "设置控件大小"
+	},
+
+	"设置控件锚点": {
+		"prefix": "GUI:setAnchorPoint",
+		"body": [
+		"GUI:setAnchorPoint(widget, x, y)",
+		],
+			"description": "设置控件锚点"
+	},
+
+	"设置控件是否显示": {
+		"prefix": "GUI:setVisible",
+		"body": [
+		"GUI:setVisible(widget, value)",
+		],
+			"description": "设置控件是否显示"
+	},
+
+	"设置控件透明度": {
+		"prefix": "GUI:setOpacity",
+		"body": [
+		"GUI:setOpacity(widget, value)",
+		],
+			"description": "设置控件透明度"
+	},
+
+	"设置控件是否以X轴翻转": {
+		"prefix": "GUI:setFlippedX",
+		"body": [
+		"GUI:setFlippedX(widget, value)",
+		],
+			"description": "设置控件是否以X轴翻转"
+	},
+
+	"设置控件是否以Y轴翻转": {
+		"prefix": "GUI:setFlippedY",
+		"body": [
+		"GUI:setFlippedY(widget, value)",
+		],
+			"description": "设置控件是否以Y轴翻转"
+	},
+
+	"设置控件缩放": {
+		"prefix": "GUI:setScale",
+		"body": [
+		"GUI:setScale(widget, value)",
+		],
+			"description": "设置控件缩放"
+	},
+
+	"设置控件渲染层级": {
+		"prefix": "GUI:setLocalZOrder",
+		"body": [
+		"GUI:setLocalZOrder(widget, value)",
+		],
+			"description": "设置控件渲染层级"
+	},
+
+	"设置容器背景颜色": {
+		"prefix": "GUI:Layout_setBackGroundColor",
+		"body": [
+		"GUI:Layout_setBackGroundColor(widget, value)",
+		],
+			"description": "设置容器背景颜色"
+	},
+
+	"设置容器是否有背景颜色": {
+		"prefix": "GUI:Layout_setBackGroundColorType",
+		"body": [
+		"GUI:Layout_setBackGroundColorType(widget, value)",
+		],
+			"description": "设置容器是否有背景颜色"
+	},
+
+	"设置容器背景透明度": {
+		"prefix": "GUI:Layout_setBackGroundColorOpacity",
+		"body": [
+		"GUI:Layout_setBackGroundColorOpacity(widget, value)",
+		],
+			"description": "设置容器背景透明度"
+	},
+
+	"设置文本控件的文本颜色": {
+		"prefix": "GUI:Text_setTextColor",
+		"body": [
+		"GUI:Text_setTextColor(widget, value)",
+		],
+			"description": "设置文本控件的文本颜色"
+	},
+
+	"设置文本控件的文本": {
+		"prefix": "GUI:Text_setString",
+		"body": [
+		"GUI:Text_setString(widget, value)",
+		],
+			"description": "设置文本控件的文本"
+	},
+
+	"设置控件触摸事件": {
+		"prefix": "GUI:addOnTouchEvent",
+		"body": [
+		"GUI:addOnTouchEvent(widget, value)",
+		],
+			"description": "设置控件触摸事件"
+	},
+
+	"设置控件点击事件": {
+		"prefix": "GUI:addOnClickEvent",
+		"body": [
+		"GUI:addOnClickEvent(widget, value)",
+		],
+			"description": "设置控件点击事件"
+	},
+
+	"设置控件是否可以点击": {
+		"prefix": "GUI:setTouchEnabled",
+		"body": [
+		"GUI:setTouchEnabled(widget, value)",
+		],
+			"description": "设置控件是否可以点击"
+	},
+
+	"设置按钮正常状态图片": {
+		"prefix": "GUI:Button_loadTextureNormal",
+		"body": [
+		"GUI:Button_loadTextureNormal(widget, filepath)",
+		],
+			"description": "设置按钮正常状态图片"
+	},
+
+	"设置按钮按下状态图片": {
+		"prefix": "GUI:Button_loadTexturePressed",
+		"body": [
+		"GUI:Button_loadTexturePressed(widget, filepath)",
+		],
+			"description": "设置按钮按下状态图片"
+	},
+
+	"设置按钮禁用状态图片": {
+		"prefix": "GUI:Button_loadTextureDisabled",
+		"body": [
+		"GUI:Button_loadTextureDisabled(widget, filepath)",
+		],
+			"description": "设置按钮禁用状态图片"
+	},
+
+	"设置按钮是否禁用": {
+		"prefix": "GUI:Button_setBright",
+		"body": [
+		"GUI:Button_setBright(widget, value)",
+		],
+			"description": "设置按钮是否禁用"				        // 该功能仅改变外观 按钮还是可以点击
+	},
+
+	"设置图片控件图片路径": {
+		"prefix": "GUI:Image_loadTexture",
+		"body": [
+		"GUI:Image_loadTexture(widget, filepath)",
+		],
+			"description": "设置图片控件图片路径"
+	},
+
+	"设置图片控件九宫格参数": {
+		"prefix": "GUI:Image_setScale9Slice",
+		"body": [
+		"GUI:Image_setScale9Slice(widget, scale9l, scale9r, scale9t, scale9b)",
+		],
+			"description": "设置图片控件九宫格参数"
+	},
+
+	"设置图片按钮是否变灰": {
+		"prefix": "GUI:Image_setGrey",
+		"body": [
+		"GUI:Image_setGrey( widget, isGrey )",
+		],
+			"description": "设置图片按钮是否变灰"
+	},
+
+	"设置文本控件的字体大小": {
+		"prefix": "GUI:Text_setFontSize",
+		"body": [
+		"GUI:Text_setFontSize(widget, value)",
+		],
+			"description": "设置文本控件的字体大小"
+	},
+
+	"设置文本控件的文本描边": {
+		"prefix": "GUI:Text_enableOutline",
+		"body": [
+		"GUI:Text_enableOutline(widget, color, size)",
+		],
+			"description": "设置文本控件的文本描边"
+	},
+
+	"设置进度条控件图片": {
+		"prefix": "GUI:LoadingBar_loadTexture",
+		"body": [
+		"GUI:LoadingBar_loadTexture(widget, filepath)",
+		],
+			"description": "设置进度条控件图片"
+	},
+
+	"设置进度条控件方向": {
+		"prefix": "GUI:LoadingBar_setDirection",
+		"body": [
+		"GUI:LoadingBar_setDirection(widget, value)",
+		],
+			"description": "设置进度条控件方向"
+	},
+
+	"设置进度条控件进度值": {
+		"prefix": "GUI:LoadingBar_setPercent",
+		"body": [
+		"GUI:LoadingBar_setPercent(widget, value)",
+		],
+			"description": "设置进度条控件进度值"
+	},
+
+	"设置输入框控件字体大小": {
+		"prefix": "GUI:TextInput_setFontSize",
+		"body": [
+		"GUI:TextInput_setFontSize(widget, value)",
+		],
+			"description": "设置输入框控件字体大小"
+	},
+
+	"设置输入框控件字体颜色": {
+		"prefix": "GUI:TextInput_setFontColor",
+		"body": [
+		"GUI:TextInput_setFontColor(widget, value)",
+		],
+			"description": "设置输入框控件字体颜色"
+	},
+
+	"设置输入框占位文本字体大小": {
+		"prefix": "GUI:TextInput_setPlaceholderFontSize",
+		"body": [
+		"GUI:TextInput_setPlaceholderFontSize(widget, value)",
+		],
+			"description": "设置输入框占位文本字体大小"
+	},
+
+	"设置输入框占位文本颜色": {
+		"prefix": "GUI:TextInput_setPlaceholderFontColor",
+		"body": [
+		"GUI:TextInput_setPlaceholderFontColor(widget, value)",
+		],
+			"description": "设置输入框占位文本颜色"
+	},
+
+	"设置输入框占位文本": {
+		"prefix": "GUI:TextInput_setPlaceHolder",
+		"body": [
+		"GUI:TextInput_setPlaceHolder(widget, value)",
+		],
+			"description": "设置输入框占位文本"
+	},
+
+	"设置输入框控件输入长度": {
+		"prefix": "GUI:TextInput_setMaxLength",
+		"body": [
+		"GUI:TextInput_setMaxLength(widget, value)",
+		],
+			"description": "设置输入框控件输入长度"
+	},
+
+	"设置输入框控件文本": {
+		"prefix": "GUI:TextInput_setString",
+		"body": [
+		"GUI:TextInput_setString(widget, value)",
+		],
+			"description": "设置输入框控件文本"
+	},
+
+	"设置输入框文本加密": {
+		"prefix": "GUI:TextInput_setInputFlag",
+		"body": [
+		"GUI:Button_loadTexturePressed(widget, value)",
+		],
+			"description": "设置输入框文本加密"
+	},
+
+	"设置输入框文本输入类型": {
+		"prefix": "GUI:TextInput_setInputMode",
+		"body": [
+		"GUI:TextInput_setInputMode(widget, value)",
+		],
+			"description": "设置输入框文本输入类型"
+	},
+
+	"设置输入框监听事件": {
+		"prefix": "GUI:TextInput_addOnEvent",
+		"body": [
+		"GUI:TextInput_addOnEvent(widget, eventCB)",
+		],
+			"description": "设置输入框监听事件"
+	},
+
+	"设置艺术字控件内容": {
+		"prefix": "GUI:TextAtlas_setString",
+		"body": [
+		"GUI:TextAtlas_setString(widget, value)",
+		],
+			"description": "设置艺术字控件内容"
+	},
+
+	"设置列表容器对齐方式": {
+		"prefix": "GUI:ListView_setGravity",
+		"body": [
+		"GUI:ListView_setGravity(widget, value)",
+		],
+			"description": "设置列表容器对齐方式"
+	},
+
+	"设置列表容器滑动方向": {
+		"prefix": "GUI:ListView_setDirection",
+		"body": [
+		"GUI:ListView_setDirection(widget, value)",
+		],
+			"description": "设置列表容器滑动方向"
+	},
+
+	"设置列表容器控件间隔": {
+		"prefix": "GUI:ListView_setItemsMargin",
+		"body": [
+		"GUI:ListView_setItemsMargin(widget, value)",
+		],
+			"description": "设置列表容器控件间隔"
+	},
+
+	"设置列表容器是否回弹": {
+		"prefix": "GUI:ListView_setBounceEnabled",
+		"body": [
+		"GUI:ListView_setBounceEnabled(widget, value)",
+		],
+			"description": "设置列表容器是否回弹"
+	},
+
+	"设置列表容器是否裁剪": {
+		"prefix": "GUI:ListView_setClippingEnabled",
+		"body": [
+		"GUI:ListView_setClippingEnabled(widget, value)",
+		],
+			"description": "设置列表容器是否裁剪"
+	},
+
+	"设置列表容器跳转指定子控件位置": {
+		"prefix": "GUI:ListView_jumpToItem",
+		"body": [
+		"GUI:ListView_jumpToItem(widget, value)",
+		],
+			"description": "设置列表容器跳转指定子控件位置"
+	},
+
+	"设置复选框背景图片": {
+		"prefix": "GUI:CheckBox_loadTextureBackGround",
+		"body": [
+		"GUI:CheckBox_loadTextureBackGround(widget, filepath)",
+		],
+			"description": "设置复选框背景图片"
+	},
+
+	"设置复选框打勾图片": {
+		"prefix": "GUI:CheckBox_loadTextureFrontCross",
+		"body": [
+		"GUI:CheckBox_loadTextureFrontCross(widget, filepath)",
+		],
+			"description": "设置复选框打勾图片"
+	},
+
+	"设置复选框是否选中": {
+		"prefix": "GUI:CheckBox_setSelected",
+		"body": [
+		"GUI:CheckBox_setSelected(widget, value)",
+		],
+			"description": "设置复选框是否选中"
+	},
+
+	"设置复选框监听事件": {
+		"prefix": "GUI:CheckBox_addOnEvent",
+		"body": [
+		"GUI:CheckBox_addOnEvent(widget, eventCB)",
+		],
+			"description": "设置复选框监听事件"
+	},
+
+	"设置特效播放": {
+		"prefix": "GUI:Effect_play",
+		"body": [
+		"GUI:Effect_play(widget, act, dir, isLoop, speed, isSequence)",
+		],
+			"description": "设置特效播放"
+	},
+
+	"设置特效停止": {
+		"prefix": "GUI:Effect_stop",
+		"body": [
+		"GUI:Effect_stop(widget, frameIndex, act, dir)",
+		],
+			"description": "设置特效停止"
+	},
+
+	"设置特效播放完成事件": {
+		"prefix": "GUI:Effect_addOnCompleteEvent",
+		"body": [
+		"GUI:Effect_addOnCompleteEvent(widget, value)",
+		],
+			"description": "设置特效播放完成事件"
+	},
+
+	"设置圆形进度条控件进度值": {
+		"prefix": "GUI:ProgressTimer_setPercentage",
+		"body": [
+		"GUI:ProgressTimer_setPercentage(widget, value)",
+		],
+			"description": "设置圆形进度条控件进度值"
+	},
+
+	"设置圆形进度条动作与回调": {
+		"prefix": "GUI:ProgressTimer_progressFromTo",
+		"body": [
+		"GUI:ProgressTimer_progressFromTo(widget, time, from, to, completeCB)",
+		],
+			"description": "设置圆形进度条动作与回调"
+	},
+
+	"设置物品框是否变灰": {
+		"prefix": "GUI:ItemShow_setIconGrey",
+		"body": [
+		"GUI:ItemShow_setIconGrey( widget, isGrey)",
+		],
+			"description": "设置物品框是否变灰"
+	},
+
+	"设置滚动控件滚动区域大小": {
+		"prefix": "GUI:ScrollView_setInnerContainerSize",
+		"body": [
+		"GUI:ScrollView_setInnerContainerSize(widget, value)",
+		],
+			"description": "设置滚动控件滚动区域大小"
+	},
+
+	"设置滚动容器滚动方向": {
+		"prefix": "GUI:ScrollView_setDirection",
+		"body": [
+		"GUI:ScrollView_setDirection(widget, value)",
+		],
+			"description": "设置滚动容器滚动方向"
+	},
+
+	"设置滚动容器是否回弹": {
+		"prefix": "GUI:ScrollView_setBounceEnabled",
+		"body": [
+		"GUI:ScrollView_setBounceEnabled(widget, value)",
+		],
+			"description": "设置滚动容器是否回弹"
+	},
+
+	"设置滚动容器是否裁剪": {
+		"prefix": "GUI:ScrollView_setClippingEnabled",
+		"body": [
+		"GUI:ScrollView_setClippingEnabled(widget, value)",
+		],
+			"description": "设置滚动容器是否裁剪"
+	},
+
+	"设置滚动容器滚动到顶部": {
+		"prefix": "GUI:ScrollView_scrollToTop",
+		"body": [
+		"GUI:ScrollView_scrollToTop(widget, time, boolvalue)",
+		],
+			"description": "设置滚动容器滚动到顶部"
+	},
+
+	"设置滚动容器滚动到低部": {
+		"prefix": "GUI:ScrollView_scrollToBottom",
+		"body": [
+		"GUI:ScrollView_scrollToBottom(widget, time, boolvalue)",
+		],
+			"description": "设置滚动容器滚动到低部"
+	},
+
+	"设置滚动容器滚动到右部": {
+		"prefix": "GUI:ScrollView_scrollToRight",
+		"body": [
+		"GUI:ScrollView_scrollToRight(widget, time, boolvalue)",
+		],
+			"description": "设置滚动容器滚动到右部"
+	},
+
+	"设置滚动容器滚动到左部": {
+		"prefix": "GUI:ScrollView_scrollToTopLeft",
+		"body": [
+		"GUI:ScrollView_scrollToTopLeft(widget, time, boolvalue)",
+		],
+			"description": "设置滚动容器滚动到左部"
+	},
+
+	"设置控件自定义参数": {
+		"prefix": "GUI:Win_SetParam",
+		"body": [
+		"GUI:Win_SetParam(widget, param)",
+		],
+			"description": "设置控件自定义参数"
+	},
+
+	"设置按钮控件的文本": {
+		"prefix": "GUI:Button_setTitleText",
+		"body": [
+		"GUI:Button_setTitleText(widget, value)",
+		],
+			"description": "设置按钮控件的文本"							// 不推荐使用 手机端字体像素点会降低
+	},
+
+	"设置控件位置": {
+		"prefix": "GUI:setPosition",
+		"body": [
+		"GUI:setPosition( widget, x, y)",
+		],
+			"description": "设置控件位置"
+	},
+
+	"设置按钮是否禁用拓展": {
+		"prefix": "GUI:Button_setBrightEX",
+		"body": [
+		"GUI:Button_setBrightEX(widget, value)",
+		],
+			"description": "设置按钮是否禁用拓展"						// 改变外观同时 按钮无法点击
+	},
+
+	"设置界面拖动": {
+		"prefix": "GUI:Win_SetDrag",
+		"body": [
+		"GUI:Win_SetDrag(widget, dragLayer)",
+		],
+			"description": "设置界面拖动"
+	},
+
+	"设置子控件是否跟随父控件变化": {
+		"prefix": "GUI:setCascadeOpacityEnabled",
+		"body": [
+		"GUI:setCascadeOpacityEnabled(widget，bool)",
+		],
+			"description": "设置子控件是否跟随父控件变化"
+	},
+
+	"设置列表容器监听事件": {
+		"prefix": "GUI:ListView_addOnScrollEvent",
+		"body": [
+		"GUI:ListView_addOnScrollEvent(widget, eventCB)",
+		],
+			"description": "设置列表容器监听事件"
+	},
+
+	"设置滚动容器监听事件": {
+		"prefix": "GUI:ScrollView_addOnScrollEvent",
+		"body": [
+		"GUI:ScrollView_addOnScrollEvent(widget, eventCB)",
+		],
+			"description": "设置滚动容器监听事件"
+	},
+
+
+
+	"打开面板": {
+		"prefix": "GUI:Win_Open",
+		"body": [
+		"GUI:Win_Open(filename)",
+		],
+			"description": "打开面板"
+	},
+
+	"关闭面板": {
+		"prefix": "GUI:Win_Close",
+		"body": [
+		"GUI:Win_Close(parent)",
+		],
+			"description": "关闭面板"
+	},
+
+	"移除其下所有子控件": {
+		"prefix": "GUI:removeAllChildren",
+		"body": [
+		"GUI:removeAllChildren(widget)",
+		],
+			"description": "移除其下所有子控件"
+	},
+
+	"将控件从父控件移除": {
+		"prefix": "GUI:removeFromParent",
+		"body": [
+		"GUI:removeFromParent(widget)",
+		],
+			"description": "将控件从父控件移除"
+	},
+
+	"单独解析from标签文件": {
+		"prefix": "GUI:Win_AddFile",
+		"body": [
+		"GUI:Win_AddFile(parent, filename)",
+		],
+			"description": "单独解析from标签文件"						// 单from标签文件不可使用dialog词条
+	},
+
+	"设置打开面板特效(小-大)1": {
+		"prefix": "GUI:Timeline_Window1",
+		"body": [
+		"GUI:Timeline_Window1(widget)",
+		],
+			"description": "设置打开面板特效(小-大)1"
+	},
+
+	"设置打开面板特效(小-大)2": {
+		"prefix": "GUI:Timeline_Window2",
+		"body": [
+		"GUI:Timeline_Window2(widget)",
+		],
+			"description": "设置打开面板特效(小-大)2"
+	},
+
+	"设置打开面板特效(小-大)3": {
+		"prefix": "GUI:Timeline_Window3",
+		"body": [
+		"GUI:Timeline_Window3(widget)",
+		],
+			"description": "设置打开面板特效(小-大)3"
+	},
+
+	"设置打开面板特效(大-小)4": {
+		"prefix": "GUI:Timeline_Window4",
+		"body": [
+		"GUI:Timeline_Window4(widget)",
+		],
+			"description": "设置打开面板特效(大-小)4"
+	},
+
+	"设置打开面板特效(大-小)5": {
+		"prefix": "GUI:Timeline_Window5",
+		"body": [
+		"GUI:Timeline_Window5(widget)",
+		],
+			"description": "设置打开面板特效(大-小)5"
+	},
+
+	"设置打开面板特效(大-小)6": {
+		"prefix": "GUI:Timeline_Window6",
+		"body": [
+		"GUI:Timeline_Window6(widget)",
+		],
+			"description": "设置打开面板特效(大-小)6"
+	},
+
+	"设置控件渐隐": {
+		"prefix": "GUI:Timeline_FadeOut",
+		"body": [
+		"GUI:Timeline_FadeOut(widget, time, timelineCB)",
+		],
+			"description": "设置控件渐隐"
+	},
+
+	"设置控件渐现": {
+		"prefix": "GUI:Timeline_FadeIn",
+		"body": [
+		"GUI:Timeline_FadeIn(widget, time, timelineCB)",
+		],
+			"description": "设置控件渐现"
+	},
+
+	"设置控件渐变至一个值": {
+		"prefix": "GUI:Timeline_FadeTo",
+		"body": [
+		"GUI:Timeline_FadeTo(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件渐变至一个值"
+	},
+
+	"设置控件缩放至一个值": {
+		"prefix": "GUI:Timeline_ScaleTo",
+		"body": [
+		"GUI:Timeline_ScaleTo(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件缩放至一个值"
+	},
+
+	"设置控件旋转至一个值": {
+		"prefix": "GUI:Timeline_RotateTo",
+		"body": [
+		"GUI:Timeline_RotateTo(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件旋转至一个值"
+	},
+
+	"设置控件移动一个值": {
+		"prefix": "GUI:Timeline_MoveTo",
+		"body": [
+		"GUI:Timeline_MoveTo(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件移动一个值"
+	},
+
+	"设置为控件开启单次定时器": {
+		"prefix": "GUI:Timeline_DelayTime",
+		"body": [
+		"GUI:Timeline_DelayTime(widget, time, timelineCB)",
+		],
+			"description": "设置为控件开启单次定时器"
+	},
+
+
+	"打印信息到控制台": {
+		"prefix": "SL:Print",
+		"body": [
+		"SL:Print(...)",
+		],
+			"description": "打印信息到控制台"
+	},
+
+	"打印表格到控制台": {
+		"prefix": "SL:Dump",
+		"body": [
+		"SL:Dump(...)",
+		],
+			"description": "打印表格到控制台"
+	},
+
+	"json字符串解密": {
+		"prefix": "SL:JsonDecode",
+		"body": [
+		"SL:JsonDecode(jsonStr)",
+		],
+			"description": "json字符串解密"
+	},
+
+	"json字符串加密": {
+		"prefix": "SL:JsonEncode",
+		"body": [
+		"SL:JsonEncode(jsonData)",
+		],
+			"description": "json字符串加密"
+	},
+
+	"向服务器发送一个表单": {
+		"prefix": "SL:SubmitForm",
+		"body": [
+		"SL:SubmitForm(filename, funcName, param)",
+		],
+			"description": "向服务器发送一个表单"
+	},
+	
+	"注册游戏事件回调": {
+		"prefix": "SL:RegisterLUAEvent",
+		"body": [
+		"SL:RegisterLUAEvent(eventID, eventTag, eventCB)",
+		],
+			"description": "注册游戏事件回调"						 // 游戏事件ID
+	},
+
+	"注销游戏事件回调": {
+		"prefix": "SL:UnRegisterLUAEvent",
+		"body": [
+		"SL:UnRegisterLUAEvent(eventID, eventTag)",			    	// 游戏事件ID
+		],
+			"description": "注销游戏事件回调"
+	},
+
+	"获得服务器时间": {
+		"prefix": "SL:GetCurServerTime",
+		"body": [
+		"SL:GetCurServerTime()",
+		],
+			"description": "获得服务器时间"
+	},
+
+	"开启一个定时器": {
+		"prefix": "SL:Schedule",
+		"body": [
+		"SL:Schedule(callback, interval)",
+		],
+			"description": "开启一个定时器"
+	},
+
+	"停止一个定时器": {
+		"prefix": "SL:UnSchedule",
+		"body": [
+		"SL:UnSchedule(scheduleID)",
+		],
+			"description": "停止一个定时器"
+	},
+
+	"发送提示信息": {
+		"prefix": "SL:ShowSystemTips",
+		"body": [
+		"SL:ShowSystemTips(str)",
+		],
+			"description": "发送提示信息"
+	},
+
+	"小退": {
+		"prefix": "SL:OnExitToRoleUI",
+		"body": [
+		"SL:OnExitToRoleUI()",
+		],
+			"description": "小退"
+	},
+
+	"大退": {
+		"prefix": "SL:OnExitToLoginUI",
+		"body": [
+		"SL:OnExitToLoginUI()",
+		],
+			"description": "大退"
+	},
+
+	"获取电池容量": {
+		"prefix": "SL:GetBatteryPer",
+		"body": [
+		"SL:GetBatteryPer()",
+		],
+			"description": "获取电池容量"
+	},
+
+	"获取网络类型": {
+		"prefix": "SL:GetNetType",
+		"body": [
+		"SL:GetNetType()",
+		],
+			"description": "获取网络类型"
+	},
+
+	"获取当前平台": {
+		"prefix": "SL:GetPlatform",
+		"body": [
+		"SL:GetPlatform()",
+		],
+			"description": "获取当前平台"
+	},
+
+	"发送到系统聊天框": {
+		"prefix": "SL:ShowSystemChat",
+		"body": [
+		"SL:ShowSystemChat( str)",
+		],
+			"description": "发送到系统聊天框"
+	},
+
+
+
+	"获取屏幕大小": {
+		"prefix": "SL:GetScreenSize",
+		"body": [
+		"SL:GetScreenSize()",
+		],
+			"description": "获取屏幕大小"
+	},
+
+	"打开设置界面": {
+		"prefix": "SL:OpenSettingUI",
+		"body": [
+		"SL:OpenSettingUI()",
+		],
+			"description": "打开设置界面"
+	},
+
+	"关闭设置界面": {
+		"prefix": "SL:CloseSettingUI",
+		"body": [
+		"SL:CloseSettingUI()",
+		],
+			"description": "关闭设置界面"
+	},
+
+	"打开行会指定页签界面": {
+		"prefix": "SL:OpenGuildMainUI",
+		"body": [
+		"SL:OpenGuildMainUI(page)",
+		],
+			"description": "打开行会指定页签界面"
+	},
+
+	"关闭行会界面": {
+		"prefix": "SL:CloseGuildMainUI",
+		"body": [
+		"SL:CloseGuildMainUI()",
+		],
+			"description": "关闭行会界面"
+	},
+
+	"打开行会申请界面": {
+		"prefix": "SL:OpenGuildApplyListUI",
+		"body": [
+		"SL:OpenGuildApplyListUI()",
+		],
+			"description": "打开行会申请界面"
+	},
+
+	"关闭行会申请界面": {
+		"prefix": "SL:CloseGuildApplyListUI",
+		"body": [
+		"SL:CloseGuildApplyListUI()",
+		],
+			"description": "关闭行会申请界面"
+	},
+
+	"打开行会创建界面": {
+		"prefix": "SL:OpenGuildCreateUI",
+		"body": [
+		"SL:OpenGuildCreateUI()",
+		],
+			"description": "打开行会创建界面"
+	},
+
+	"关闭行会创建界面": {
+		"prefix": "SL:CloseGuildCreateUI",
+		"body": [
+		"SL:CloseGuildCreateUI()",
+		],
+			"description": "关闭行会创建界面"
+	},
+
+	"打开行会结盟申请界面": {
+		"prefix": "SL:OpenGuildAllyApplyUI",
+		"body": [
+		"SL:OpenGuildAllyApplyUI()",
+		],
+			"description": "打开行会结盟申请界面"
+	},
+
+	"关闭行会结盟申请界面": {
+		"prefix": "SL:CloseGuildAllyApplyUI",
+		"body": [
+		"SL:CloseGuildAllyApplyUI()",
+		],
+			"description": "关闭行会结盟申请界面"
+	},
+
+	"打开角色界面": {
+		"prefix": "SL:OpenMyPlayerUI",
+		"body": [
+		"SL:SL:OpenMyPlayerUI()",
+		],
+			"description": "打开角色界面"
+	},
+
+	"打开英雄界面": {
+		"prefix": "SL:OpenMyPlayerHeroUI",
+		"body": [
+		"SL:OpenMyPlayerHeroUI()",
+		],
+			"description": "打开英雄界面"
+	},
+
+	"打开其他人角色界面": {
+		"prefix": "SL:OpenOtherPlayerUI",
+		"body": [
+		"SL:OpenOtherPlayerUI()",
+		],
+			"description": "打开其他人角色界面"
+	},
+
+	"打开其他人英雄界面": {
+		"prefix": "SL:OpenOtherPlayerHeroUI",
+		"body": [
+		"SL:OpenOtherPlayerHeroUI()",
+		],
+			"description": "打开其他人英雄界面"
+	},
+
+	"打开背包界面": {
+		"prefix": "SL:OpenBagUI",
+		"body": [
+		"SL:OpenBagUI()",
+		],
+			"description": "打开背包界面"
+	},
+
+	"打开英雄背包界面": {
+		"prefix": "SL:OpenHeroBagUI",
+		"body": [
+		"SL:OpenHeroBagUI()",
+		],
+			"description": "打开英雄背包界面"
+	},
+
+	"打开拍卖行": {
+		"prefix": "SL:OpenAuctionUI",
+		"body": [
+		"SL:OpenAuctionUI()",
+		],
+			"description": "打开拍卖行"
+	},
+
+	"打开摆摊界面": {
+		"prefix": "SL:OpenAutoTradeUI",
+		"body": [
+		"SL:OpenAutoTradeUI()",
+		],
+			"description": "打开摆摊界面"
+	},
+
+	"打开排行榜": {
+		"prefix": "SL:OpenRankUI",
+		"body": [
+		"SL:OpenRankUI()",
+		],
+			"description": "打开排行榜"
+	},
+
+	"打开聊天": {
+		"prefix": "SL:OpenChatUI",
+		"body": [
+		"SL:OpenChatUI()",
+		],
+			"description": "打开聊天"
+	},
+
+	"打开交易行": {
+		"prefix": "SL:OpenTradingBankUI",
+		"body": [
+		"SL:OpenTradingBankUI()",
+		],
+			"description": "打开交易行"
+	},
+
+	"打开商城": {
+		"prefix": "SL:OpenStoreUI",
+		"body": [
+		"SL:OpenStoreUI()",
+		],
+			"description": "打开商城"
+	},
+
+	"打开技能配置界面": {
+		"prefix": "SL:OpenSkillSettingUI",
+		"body": [
+		"SL:OpenSkillSettingUI()",
+		],
+			"description": "打开技能配置界面"
+	},
+
+	"打开仓库界面": {
+		"prefix": "SL:OpenStorageUI",
+		"body": [
+		"SL:OpenStorageUI()",
+		],
+			"description": "打开仓库界面"
+	},
+
+	"通用弹窗": {
+		"prefix": "SL:OpenCommonTipsPop",
+		"body": [
+		"SL:OpenCommonTipsPop(data)",
+		],
+			"description": "通用弹窗"
+	},
+
+	"通用tips弹窗": {
+		"prefix": "SL:OpenCommonDescTipsPop",
+		"body": [
+		"SL:OpenCommonDescTipsPop(data)",
+		],
+			"description": "通用tips弹窗"
+	},
+
+	"打开社交界面": {
+		"prefix": "SL:OpenSocialUI",
+		"body": [
+		"SL:OpenSocialUI()",
+		],
+			"description": "打开社交界面"
+	},
+
+	"打开充值面板": {
+		"prefix": "SL:RequestPay",
+		"body": [
+		"SL:RequestPay(channel, currencyID, price, productIndex)",
+		],
+			"description": "打开充值面板"
+	},
+
+	"打开引导": {
+		"prefix": "SL:StartGuide",
+		"body": [
+		"SL:StartGuide(data)",
+		],
+			"description": "打开引导"
+	},
+
+	"关闭引导": {
+		"prefix": "SL:CloseGuide",
+		"body": [
+		"SL:CloseGuide()",
+		],
+			"description": "关闭引导"
+	},
+
+	"是否处于引导": {
+		"prefix": "SL:IsActiveGuide",
+		"body": [
+		"SL:IsActiveGuide()",
+		],
+			"description": "是否处于引导"
+	},
+
+	"是否处于强制引导": {
+		"prefix": "SL:IsForceGuide",
+		"body": [
+		"SL:IsForceGuide()",
+		],
+			"description": "是否处于强制引导"
+	},
+
+
+
+	"获取角色基础属性": {
+		"prefix": "SL:GetRoleData",
+		"body": [
+		"SL:GetRoleData()",
+		],
+			"description": "获取角色基础属性"
+	},
+
+	"获取角色行会信息": {
+		"prefix": "SL:GetGuildData",
+		"body": [
+		"SL:GetGuildData()",
+		],
+			"description": "获取角色行会信息"
+	},
+
+	"是否加入行会": {
+		"prefix": "SL:IsJoinGuild",
+		"body": [
+		"SL:IsJoinGuild()",
+		],
+			"description": "是否加入行会"
+	},
+
+	"根据道具ID获取道具信息": {
+		"prefix": "SL:GetItemDataByIndex",
+		"body": [
+		"SL:GetItemDataByIndex(index)",
+		],
+			"description": "根据道具ID获取道具信息"
+	},
+
+	"根据道具索引名获取道具信息": {
+		"prefix": "SL:GetItemDataByKeyName",
+		"body": [
+		"SL:GetItemDataByKeyName(keyname)",
+		],
+			"description": "根据道具索引名获取道具信息"
+	},
+
+	"根据道具ID获取背包物品数量": {
+		"prefix": "SL:GetItemNumberByIndex",
+		"body": [
+		"SL:GetItemNumberByIndex(index,param)",
+		],
+			"description": "根据道具ID获取背包物品数量"
+	},
+
+	"根据道具ID获取道具名": {
+		"prefix": "SL:GetItemNameByIndex",
+		"body": [
+		"SL:GetItemNameByIndex(index)",
+		],
+			"description": "根据道具ID获取道具名"
+	},
+
+	"根据道具索引名获取道具数量": {
+		"prefix": "SL:GetItemNumberByKeyName",
+		"body": [
+		"SL:GetItemNumberByKeyName(keyname, param)",
+		],
+			"description": "根据道具索引名获取道具数量"
+	},
+
+	"发送GM命令": {
+		"prefix": "SL:SendGMMsgToChat",
+		"body": [
+		"SL:SendGMMsgToChat(msg)",
+		],
+			"description": "发送GM命令"
+	},
+
+	"设置音效": {
+		"prefix": "SL:SetAudioByID",
+		"body": [
+		"SL:SetAudioByID(ID)",
+		],
+			"description": "设置音效"
+	},
+
+	"获取角色常量(属性)": {
+		"prefix": "SL:GetMetaValue",
+		"body": [
+		"SL:GetMetaValue(var)",
+		],
+			"description": "获取角色常量(属性)"					    	// 角色常量表
+	},
+
+	"获取buff数据": {
+		"prefix": "SL:GetBuffData",
+		"body": [
+		"SL:GetBuffData(targetID)",
+		],
+			"description": "获取buff数据"
+	},
+
+	"是否自动战斗": {
+		"prefix": "SL:IsAFK",
+		"body": [
+		"SL:IsAFK()",
+		],
+			"description": "是否自动战斗"
+	},
+
+	"开启自动战斗": {
+		"prefix": "SL:AFKBegin",
+		"body": [
+		"SL:AFKBegin()",
+		],
+			"description": "开启自动战斗"
+	},
+
+	"关闭自动战斗": {
+		"prefix": "SL:AFKEnd",
+		"body": [
+		"SL:AFKEnd()",
+		],
+			"description": "关闭自动战斗"
+	},
+
+	"是否在自动寻路": {
+		"prefix": "SL:IsAutoMove",
+		"body": [
+		"SL:IsAutoMove()",
+		],
+			"description": "是否在自动寻路"
+	},
+
+	"开启自动寻路": {
+		"prefix": "SL:AutoMoveBegin",
+		"body": [
+		"SL:AutoMoveBegin(mapID, mapX, mapY)",
+		],
+			"description": "开启自动寻路"
+	},
+
+	"关闭自动寻路": {
+		"prefix": "SL:AutoMoveEnd",
+		"body": [
+		"SL:AutoMoveEnd()",
+		],
+			"description": "关闭自动寻路"
+	},
+
+	"是否自动拾取（人物）": {
+		"prefix": "SL:IsAutoPick",
+		"body": [
+		"SL:IsAutoPick()",
+		],
+			"description": "是否自动拾取（人物）"
+	},
+
+	"开启自动拾取（人物）": {
+		"prefix": "SL:AutoPickBegin",
+		"body": [
+		"SL:AutoPickBegin()",
+		],
+			"description": "开启自动拾取（人物）"
+	},
+
+	"关闭自动拾取（人物）": {
+		"prefix": "SL:AutoPickEnd",
+		"body": [
+		"SL:AutoPickEnd()",
+		],
+			"description": "关闭自动拾取（人物）"
+	},
+
+	"根据装备位获取装备数据": {
+		"prefix": "SL:GetEquipDataByPos",
+		"body": [
+		"SL:GetEquipDataByPos(pos)",
+		],
+			"description": "根据装备位获取装备数据"
+	},
+
+	"根据装备位获取英雄装备数据": {
+		"prefix": "SL:GetHeroEquipDataByPos",
+		"body": [
+		"SL:GetHeroEquipDataByPos(pos)",
+		],
+			"description": "根据装备位获取英雄装备数据"
+	},
+
+	"根据装备StdMode获取装备位置": {
+		"prefix": "SL:GetEquipPosByStdMode",
+		"body": [
+		"SL:GetEquipPosByStdMode(stdMode)",
+		],
+			"description": "根据装备StdMode获取装备位置"
+	},
+
+	"设置控件闪烁": {
+		"prefix": "GUI:Timeline_Blink",
+		"body": [
+		"GUI:Timeline_Blink(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件闪烁"
+	},
+
+	"控件移动动画": {
+		"prefix": "GUI:Timeline_MoveTo",
+		"body": [
+		"GUI:Timeline_MoveTo(widget, value, time, timelineCB)",
+		],
+			"description": "控件移动动画"
+	},
+
+	"控件缩放动画": {
+		"prefix": "GUI:Timeline_ScaleBy",
+		"body": [
+		"GUI:Timeline_ScaleBy(widget, value, time, timelineCB)",
+		],
+			"description": "控件缩放动画"
+	},
+
+	"设置控件旋转动画": {
+		"prefix": "GUI:Timeline_RotateBy",
+		"body": [
+		"GUI:Timeline_RotateBy(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件旋转动画"
+	},
+
+	"控件延时回调": {
+		"prefix": "GUI:Timeline_CallFunc",
+		"body": [
+		"GUI:Timeline_CallFunc(widget, value, time, timelineCB)",
+		],
+			"description": "控件延时回调"
+	},
+
+	"控件延时显示": {
+		"prefix": "GUI:Timeline_Show",
+		"body": [
+		"GUI:Timeline_Show(widget, value, time, timelineCB)",
+		],
+			"description": "控件延时显示"
+	},
+
+	"控件延时隐藏": {
+		"prefix": "GUI:Timeline_Hide",
+		"body": [
+		"GUI:Timeline_Hide(widget, value, time, timelineCB)",
+		],
+			"description": "控件延时隐藏"
+	},
+
+	"设置控件抖动": {
+		"prefix": "GUI:Timeline_Shake",
+		"body": [
+		"GUI:Timeline_Shake(widget, value, time, timelineCB)",
+		],
+			"description": "设置控件抖动"
+	},
+
+	"设置进度条控件的变化动画": {
+		"prefix": "GUI:Timeline_Progress",
+		"body": [
+		"GUI:Timeline_Progress(widget, value, time, timelineCB)",
+		],
+			"description": "设置进度条控件的变化动画"
+	},
+
+	"MD5加密": {
+		"prefix": "SL:GetStrMD5",
+		"body": [
+		"SL:GetStrMD5(str)",
+		],
+			"description": "MD5加密"
+	},
+
+	"获取登录角色信息": {
+		"prefix": "SL:GetLoginData",
+		"body": [
+		"SL:GetLoginData()",
+		],
+			"description": "获取登录角色信息"
+	},
+
+	"设置鼠标经过tips": {
+		"prefix": "SL:addMouseOverTips",
+		"body": [
+		"SL:addMouseOverTips(widget,str,pos,anr)",
+		],
+			"description": "设置鼠标经过tips"
+	},
+
+	"获取当前主服务器ID": {
+		"prefix": "SL:GetGameMainServerID",
+		"body": [
+		"SL:GetGameMainServerID()",
+		],
+			"description": "获取当前主服务器ID"
+	},
+
+	"获取当前服务器名字": {
+		"prefix": "SL:GetGameServerName",
+		"body": [
+		"SL:GetGameServerName()",
+		],
+			"description": "获取当前服务器名字"
+	},
+
+	"添加地图特效": {
+		"prefix": "SL:AddMapSpecialEffect",
+		"body": [
+		"SL:AddMapSpecialEffect(actorID, sfxId, type, x, y, param)",
+		],
+			"description": "添加地图特效"
+	},
+
+	"根据玩家属性ID获取属性值": {
+		"prefix": "SL:GetRoleAttByType",
+		"body": [
+		"SL:GetRoleAttByType(attID)",
+		],
+			"description": "根据玩家属性ID获取属性值"
+	},
+
+	"创建滚动文本控件": {
+		"prefix": "GUI:ScrollText_Create",
+		"body": [
+		"GUI:ScrollText_Create(parent, ID, x, y, width, fontSize, fontColor, str)",
+		],
+			"description": "创建滚动文本控件"
+	},
+
+	"创建多功能文本控件": {
+		"prefix": "GUI:RichTextCustom_Create",
+		"body": [
+		"GUI:RichTextCustom_Create(parent, ID, x, y, str, width)",
+		],
+			"description": "创建多功能文本控件"
+	},
+
+	"创建翻页容器": {
+		"prefix": "GUI:PageView_Create",
+		"body": [
+		"GUI:PageView_Create(parent, ID, x, y, width, height)",
+		],
+			"description": "创建翻页容器"
+	},
+
+	"获取翻页容器当前页面": {
+		"prefix": "GUI:PageView_getCurrentPageIndex",
+		"body": [
+		"GUI:PageView_getCurrentPageIndex(parent)",
+		],
+			"description": "获取翻页容器当前页面"
+	},
+
+	"设置滚动文本控件的文本": {
+		"prefix": "GUI:ScrollText_setString",
+		"body": [
+		"GUI:ScrollText_setString(widget, value)",
+		],
+			"description": "设置滚动文本控件的文本"
+	},
+
+	"获取滚动文本控件的文本": {
+		"prefix": "GUI:ScrollText_getString",
+		"body": [
+		"GUI:ScrollText_getString(widget)",
+		],
+			"description": "获取滚动文本控件的文本"
+	},
+
+	"设置滚动文本水平居中方式": {
+		"prefix": "GUI:ScrollText_setHorizontalAlignment",
+		"body": [
+		"GUI:ScrollText_setHorizontalAlignment(widget, value)",
+		],
+			"description": "设置滚动文本水平居中方式"
+	},
+
+	"设置滚动文本字体颜色": {
+		"prefix": "GUI:ScrollText_setTextColor",
+		"body": [
+		"GUI:ScrollText_setTextColor(widget, value)",
+		],
+			"description": "设置滚动文本字体颜色"
+	},
+
+	"设置进度条控件颜色": {
+		"prefix": "GUI:LoadingBar_setColor",
+		"body": [
+		"GUI:LoadingBar_setColor(widget, value)",
+		],
+			"description": "设置进度条控件颜色"
+	},
+
+	"设置翻页容器翻页": {
+		"prefix": "GUI:PageView_scrollToItem",
+		"body": [
+		"GUI:PageView_scrollToItem(widget, index)",
+		],
+			"description": "设置翻页容器翻页"
+	},
+
+	"添加翻页容器页面": {
+		"prefix": "GUI:PageView_addPage",
+		"body": [
+		"GUI:PageView_addPage(widget, value)",
+		],
+			"description": "添加翻页容器页面"
+	},
+
+	"设置翻页容器监听事件": {
+		"prefix": "GUI:PageView_addOnEvent",
+		"body": [
+		"GUI:PageView_addOnEvent(widget, eventCB)",
+		],
+			"description": "设置翻页容器监听事件"
+	},
+
+}

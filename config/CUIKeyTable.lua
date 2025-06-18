@@ -1,0 +1,62 @@
+local function checkKey(formatStr)
+    return string.format(formatStr, global.isWinPlayMode and "pc" or "mobile")
+end
+
+local CUIKeyTable = {
+    MOBILE_SKILL        = "mobile_skill",
+    PROPERTY            = checkKey("%s_property"),
+    MOBILE_SUMMONS      = "mobile_summons",
+    ASSIST              = checkKey("%s_assist"),
+    MOBILE_DIG          = "mobile_dig",
+    MAINMINIMAP         = checkKey("%s_minimap"),
+    PLAYER_FRAME        = checkKey("%s_player"),
+    PLAYER_EQUIP        = checkKey("%s_player_equip"),
+    PLAYER_SKILL        = checkKey("%s_player_skill"),
+    PLAYER_TITLE        = checkKey("%s_player_title"),
+    PLAYER_SUPEREQUIP   = checkKey("%s_player_superEquip"),
+    BAG                 = checkKey("%s_bag"),
+    BAG_MERGE           = checkKey("%s_bag_merge"),
+    RANK                = checkKey("%s_rank_layer"),
+    MAINTOP             = "mobile_main_top",
+    BAITAN              = checkKey("%s_baitan"),
+    BEST_RING           = checkKey("%s_best_ring"),
+    MAINTARGET          = "mobile_target",
+    NPC_STORAGE         = checkKey("%s_npc_storage"),
+    PLAYER_BASEATTR     = checkKey("%s_base_attr"),
+    PLAYER_EXTRAATTR    = checkKey("%s_extra_attr"),
+    BESTRONG            = checkKey("%s_bestrong"),
+    MINIMAP             = checkKey("%s_map"),
+    LOOKPLAYER_FRAME    = checkKey("%s_look_player"),
+    MAIN_MONSTER        = checkKey("%s_main_monster"),
+    COMMON_QUESTION     = checkKey("%s_common_question"),
+    MAINTARGET_BELONG   = checkKey("%s_MainTarget_Belong"),
+    MAINMONSTER_BELONG  = checkKey("%s_MainMonster_Belong"),
+    COMPOUND_ITEMS      = checkKey("%s_compound_items"),
+    COMMON_VERIFICATION = checkKey("%s_common_verification"),
+
+    HERO_STATE          = checkKey("%s_hero_state"),
+    HERO_MERGE_FRAME    = checkKey("%s_player_hero"),
+    HERO_EQUIP          = checkKey("%s_hero_equip"),
+    HERO_SKILL          = checkKey("%s_hero_skill"),
+    HERO_TITLE          = checkKey("%s_hero_title"),
+    HERO_SUPEREQUIP     = checkKey("%s_hero_superEquip"),
+    HERO_BASEATTR       = checkKey("%s_hero_base_attr"),
+    HERO_EXTRAATTR      = checkKey("%s_hero_extra_attr"),
+    HERO_BEST_RING      = checkKey("%s_hero_best_ring"),
+    HERO_FRAME          = checkKey("%s_hero"),
+    HERO_BAGLEVEL1      = checkKey("%s_hero_bag_level1"),
+    HERO_BAGLEVEL2      = checkKey("%s_hero_bag_level2"),
+    HERO_BAGLEVEL3      = checkKey("%s_hero_bag_level3"),
+    HERO_BAGLEVEL4      = checkKey("%s_hero_bag_level4"),
+    HERO_BAGLEVEL5      = checkKey("%s_hero_bag_level5"),
+
+    TRADE_PLAYER_FRAME  = checkKey("%s_trade_player_frame"),
+    GUILD_FRAME         = checkKey("%s_guild_frame"),
+    SOCIAL_FRAME        = checkKey("%s_social_frame"),
+    STORE_FRAME         = checkKey("%s_store_frame"),
+    SETTING_FRAME       = checkKey("%s_setting_frame"),
+    AUCTION_FRAME       = checkKey("%s_auction_frame"),
+
+}
+
+return CUIKeyTable

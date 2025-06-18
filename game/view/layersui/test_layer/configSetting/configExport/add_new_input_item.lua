@@ -1,0 +1,114 @@
+local ui = {}
+function ui.init(parent)
+	-- Create Layout_close
+	local Layout_close = GUI:Layout_Create(parent, "Layout_close", 0.00, 0.00, 1136.00, 640.00, false)
+	GUI:setTouchEnabled(Layout_close, true)
+	GUI:setTag(Layout_close, -1)
+
+	-- Create PMainUI
+	local PMainUI = GUI:Layout_Create(parent, "PMainUI", 588.00, 300.00, 200.00, 530.00, false)
+	GUI:Layout_setBackGroundColorType(PMainUI, 1)
+	GUI:Layout_setBackGroundColor(PMainUI, "#000000")
+	GUI:Layout_setBackGroundColorOpacity(PMainUI, 229)
+	GUI:setAnchorPoint(PMainUI, 0.00, 0.50)
+	GUI:setTouchEnabled(PMainUI, false)
+	GUI:setTag(PMainUI, -1)
+
+	-- Create Image_input_bg
+	local Image_input_bg = GUI:Image_Create(PMainUI, "Image_input_bg", 50.00, 490.00, "res/public/1900015004.png")
+	GUI:Image_setScale9Slice(Image_input_bg, 74, 72, 16, 10)
+	GUI:setContentSize(Image_input_bg, 70, 25)
+	GUI:setIgnoreContentAdaptWithSize(Image_input_bg, false)
+	GUI:setAnchorPoint(Image_input_bg, 0.50, 0.50)
+	GUI:setTouchEnabled(Image_input_bg, false)
+	GUI:setTag(Image_input_bg, -1)
+
+	-- Create input_add_id
+	local input_add_id = GUI:TextInput_Create(PMainUI, "input_add_id", 50.00, 490.00, 70.00, 25.00, 16)
+	GUI:TextInput_setString(input_add_id, "")
+	GUI:TextInput_setPlaceHolder(input_add_id, "新增ID")
+	GUI:TextInput_setFontColor(input_add_id, "#ffffff")
+	GUI:setAnchorPoint(input_add_id, 0.50, 0.50)
+	GUI:setTouchEnabled(input_add_id, true)
+	GUI:setTag(input_add_id, -1)
+
+	-- Create Text
+	local Text = GUI:Text_Create(PMainUI, "Text", 50.00, 505.00, 16, "#ffffff", [[道具ID]])
+	GUI:setAnchorPoint(Text, 0.50, 0.00)
+	GUI:setTouchEnabled(Text, false)
+	GUI:setTag(Text, -1)
+	GUI:Text_enableOutline(Text, "#000000", 1)
+
+	-- Create Text_1
+	local Text_1 = GUI:Text_Create(PMainUI, "Text_1", 133.00, 505.00, 16, "#ffffff", [[名称]])
+	GUI:setAnchorPoint(Text_1, 0.50, 0.00)
+	GUI:setTouchEnabled(Text_1, false)
+	GUI:setTag(Text_1, -1)
+	GUI:Text_enableOutline(Text_1, "#000000", 1)
+
+	-- Create Image_input_bg_1
+	local Image_input_bg_1 = GUI:Image_Create(PMainUI, "Image_input_bg_1", 133.00, 490.00, "res/public/1900015004.png")
+	GUI:Image_setScale9Slice(Image_input_bg_1, 0, 0, 0, 0)
+	GUI:setContentSize(Image_input_bg_1, 70, 25)
+	GUI:setIgnoreContentAdaptWithSize(Image_input_bg_1, false)
+	GUI:setAnchorPoint(Image_input_bg_1, 0.50, 0.50)
+	GUI:setTouchEnabled(Image_input_bg_1, false)
+	GUI:setTag(Image_input_bg_1, -1)
+
+	-- Create input_add_name
+	local input_add_name = GUI:TextInput_Create(PMainUI, "input_add_name", 133.00, 490.00, 70.00, 25.00, 16)
+	GUI:TextInput_setString(input_add_name, "")
+	GUI:TextInput_setPlaceHolder(input_add_name, "新增名称")
+	GUI:TextInput_setFontColor(input_add_name, "#ffffff")
+	GUI:setAnchorPoint(input_add_name, 0.50, 0.50)
+	GUI:setTouchEnabled(input_add_name, true)
+	GUI:setTag(input_add_name, -1)
+
+	-- Create ScrollView_items
+	local ScrollView_items = GUI:ScrollView_Create(PMainUI, "ScrollView_items", 100.00, 475.00, 200.00, 410.00, 1)
+	GUI:ScrollView_setInnerContainerSize(ScrollView_items, 200.00, 410.00)
+	GUI:setAnchorPoint(ScrollView_items, 0.50, 1.00)
+	GUI:setTouchEnabled(ScrollView_items, true)
+	GUI:setTag(ScrollView_items, -1)
+
+	-- Create Layout_line
+	local Layout_line = GUI:Layout_Create(PMainUI, "Layout_line", 0.00, 65.00, 200.00, 1.00, false)
+	GUI:Layout_setBackGroundColorType(Layout_line, 1)
+	GUI:Layout_setBackGroundColor(Layout_line, "#ffffff")
+	GUI:Layout_setBackGroundColorOpacity(Layout_line, 255)
+	GUI:setTouchEnabled(Layout_line, false)
+	GUI:setTag(Layout_line, -1)
+
+	-- Create Button_sure
+	local Button_sure = GUI:Button_Create(PMainUI, "Button_sure", 100.00, 30.00, "res/private/gui_edit/Button_Normal.png")
+	GUI:Button_loadTexturePressed(Button_sure, "res/private/gui_edit/Button_Press.png")
+	GUI:Button_loadTextureDisabled(Button_sure, "res/private/gui_edit/Button_Disable.png")
+	GUI:setContentSize(Button_sure, 75, 30)
+	GUI:setIgnoreContentAdaptWithSize(Button_sure, false)
+	GUI:Button_setTitleText(Button_sure, "新 增")
+	GUI:Button_setTitleColor(Button_sure, "#00ffff")
+	GUI:Button_setTitleFontSize(Button_sure, 16)
+	GUI:Button_titleEnableOutline(Button_sure, "#000000", 1)
+	GUI:setAnchorPoint(Button_sure, 0.50, 0.00)
+	GUI:setTouchEnabled(Button_sure, true)
+	GUI:setTag(Button_sure, -1)
+
+	-- Create Text_tips
+	local Text_tips = GUI:Text_Create(PMainUI, "Text_tips", 100.00, 5.00, 16, "#ffffff", [[不支持装备类型]])
+	GUI:setAnchorPoint(Text_tips, 0.50, 0.00)
+	GUI:setTouchEnabled(Text_tips, false)
+	GUI:setTag(Text_tips, -1)
+	GUI:Text_enableOutline(Text_tips, "#000000", 1)
+
+	-- Create Button_close
+	local Button_close = GUI:Button_Create(PMainUI, "Button_close", 201.00, 488.00, "res/public/1900000510.png")
+	GUI:Button_loadTexturePressed(Button_close, "res/public/1900000511.png")
+	GUI:Button_loadTextureDisabled(Button_close, "res/public/1900000511.png")
+	GUI:Button_setTitleText(Button_close, "")
+	GUI:Button_setTitleColor(Button_close, "#ffffff")
+	GUI:Button_setTitleFontSize(Button_close, 14)
+	GUI:Button_titleEnableOutline(Button_close, "#000000", 1)
+	GUI:setTouchEnabled(Button_close, true)
+	GUI:setTag(Button_close, -1)
+end
+return ui

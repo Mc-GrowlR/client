@@ -1,0 +1,8 @@
+{
+    "files.encoding":"utf8",
+    "Lua.diagnostics.disable": [
+        "unused-vararg",
+        "discard-returns",
+        "param-type-mismatch"
+    ]
+}
